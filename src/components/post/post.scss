@@ -1,0 +1,148 @@
+//Colours
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+.PostPage {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+
+      &__post{
+          width: 80%;
+          margin-top: 10px;
+          background-color: #eee;
+          display: flex;
+          box-shadow: 0px 10px 10px rgba(0,0,0,.2);
+          
+
+
+          &--image{
+              width:10vw;
+            height: 20vh;         
+         }
+         &--placeholderImage{
+            width:10vw;
+          height: 20vh;      
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-weight: 700;
+          background-color: $color-primary-light;   
+       }
+
+         &--details{
+             margin-left: 20px;
+             font-size: 20px;
+             font-weight: 700;
+         }
+          
+      }
+
+}
+.custom-button{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.movieModal{
+    display: flex;
+    flex-direction: column;
+
+
+    &__header{
+        height: 85vh;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+        display: flex;
+      
+
+         &__imageContainer{
+             margin-top: 30px;
+             height: 51vh;
+             border: 5px solid white;
+             margin-left: 40px;
+             display: flex;
+             flex-direction: column;
+
+             &--image{
+                width: 20vw;
+                height: 50vh;
+             }
+             &--placeholderImage{
+                width: 20vw;
+                height: 50vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+                background-color: $color-primary-light;   
+             }
+             &--rating{
+                 width: 20vw;
+                 padding: 5px;
+                 border: 1px solid white;
+                 margin-top: 10px;
+                 color: white;
+                 font-size: 20px;
+                 font-weight: 700;
+                 text-align: center;
+             }
+         }
+
+
+         &__textContainer{
+             margin-top: 30px;
+             display: flex;
+             flex-direction: column;
+             margin-left: 40px;
+
+
+             &--title{
+                 padding: 20px;
+                 padding-right: 100px;
+                 border: 1px solid white;
+                 color: red;
+
+                 span{
+                     color: white;
+                     font-size: 18px;
+                     font-weight: 700;
+                 }
+                }
+
+            &--plot{
+               min-width: 30vw;
+               padding: 5px;
+               margin-top: 10px;
+               border: 1px solid white;
+
+               span{
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            }
+         }
+
+         &__close{
+             margin-top: 20px;
+             margin-left: 20px;
+             margin-right: 30px;
+             font-size: 30px;
+            font-weight: 700;
+            color: white;
+            cursor: pointer;
+
+         }
+    }
+}
